@@ -9,11 +9,13 @@ import (
 )
 
 type Repository struct {
+	log *slog.Logger
 	*authrepo.AuthRepository
 }
 
 func NewRepository(ctx context.Context, log *slog.Logger, db *storage.Postgres) *Repository {
 	return &Repository{
+		log,
 		authrepo.NewAuthRepository(ctx, log, db),
 	}
 }
