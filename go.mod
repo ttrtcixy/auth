@@ -8,7 +8,7 @@ require (
 	github.com/google/uuid v1.6.0
 	github.com/joho/godotenv v1.5.1
 	github.com/ttrtcixy/color-slog-handler v0.0.7
-	github.com/ttrtcixy/pgx-wrapper v0.0.3
+	github.com/ttrtcixy/pgx-wrapper v0.0.4
 	github.com/ttrtcixy/task-closer v0.0.3
 	github.com/ttrtcixy/users-protos v1.1.5
 	google.golang.org/grpc v1.78.0
@@ -25,5 +25,5 @@ require (
 	golang.org/x/sync v0.19.0 // indirect
 	golang.org/x/sys v0.40.0 // indirect
 	golang.org/x/text v0.33.0 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20260114163908-3f89685c29c3 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20260120174246-409b4a993575 // indirect
 )
