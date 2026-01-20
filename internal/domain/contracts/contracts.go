@@ -3,6 +3,7 @@ package contracts
 import (
 	"context"
 
+	"github.com/ttrtcixy/users/internal/domain"
 	entities "github.com/ttrtcixy/users/internal/domain/entities/auth"
 )
 
@@ -20,7 +21,7 @@ type AuthRepository interface {
 }
 
 type Tx interface {
-	RunInTx(ctx context.Context, fn func(context.Context) error) error
+	RunInTx(ctx context.Context, tsOptions domain.TxOptions, fn func(context.Context) error) error
 }
 
 type SignupRepository interface {
