@@ -9,10 +9,10 @@ import (
 
 type AuthRepository struct {
 	log *slog.Logger
-	DB  storage.DB
+	DB  *storage.Postgres
 }
 
-func NewAuthRepository(_ context.Context, log *slog.Logger, db storage.DB) *AuthRepository {
+func NewAuthRepository(_ context.Context, log *slog.Logger, db *storage.Postgres) *AuthRepository {
 	return &AuthRepository{
 		log: log,
 		DB:  db,

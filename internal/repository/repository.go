@@ -12,7 +12,7 @@ type Repository struct {
 	*authrepo.AuthRepository
 }
 
-func NewRepository(ctx context.Context, log *slog.Logger, db storage.DB) *Repository {
+func NewRepository(ctx context.Context, log *slog.Logger, db *storage.Postgres) *Repository {
 	return &Repository{
 		authrepo.NewAuthRepository(ctx, log, db),
 	}
